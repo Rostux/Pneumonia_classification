@@ -1,3 +1,5 @@
+
+
 # Pneumonia Detection using CNN based classification 
 
 Pneumonia Detection using CNN based classification model trained on chest x-ray scans of normal and people diagnosed with pneumonia. We trained a Convolutional Neural Network designed to process these x-ray images of the chest with pre-classified labels from the training set to replicate those results on the test set.
@@ -43,38 +45,31 @@ As you can clearly see the data is imbalanced. Training a model on this imbalanc
 ## Model details
 
 
-Model: "sequential_1"
-_________________________________________________________________
-Layer (type)                 Output Shape              Param #   
-=================================================================
-conv2d_5 (Conv2D)            (None, 150, 150, 32)      320       
-_________________________________________________________________
-max_pooling2d_5 (MaxPooling2 (None, 75, 75, 32)        0         
-_________________________________________________________________
-conv2d_6 (Conv2D)            (None, 75, 75, 64)        18496     
-_________________________________________________________________
-max_pooling2d_6 (MaxPooling2 (None, 38, 38, 64)        0         
-_________________________________________________________________
-conv2d_7 (Conv2D)            (None, 38, 38, 128)       73856     
-_________________________________________________________________
-max_pooling2d_7 (MaxPooling2 (None, 19, 19, 128)       0         
-_________________________________________________________________
-conv2d_8 (Conv2D)            (None, 19, 19, 128)       147584    
-_________________________________________________________________
-max_pooling2d_8 (MaxPooling2 (None, 10, 10, 128)       0         
-_________________________________________________________________
-flatten_1 (Flatten)          (None, 12800)             0         
-_________________________________________________________________
-dropout_4 (Dropout)          (None, 12800)             0         
-_________________________________________________________________
-dense_2 (Dense)              (None, 512)               6554112   
-_________________________________________________________________
-dense_3 (Dense)              (None, 1)                 513       
-=================================================================
+
+|Layer (type)                 |   Output Shape      |  Param    |  
+|-----------------------------|---------------------|-----------|
+|conv2d-5 (Conv2D)            | (150, 150, 32)      | 320       | 
+|max-pooling2d-5 (MaxPooling2 | (75, 75, 32)        | 0         |  
+|conv2d-6 (Conv2D)            | (75, 75, 64)        | 18496     |
+|max-pooling2d-6 (MaxPooling2 | (38, 38, 64)        | 0         |
+|conv2d-7 (Conv2D)            | (38, 38, 128)       | 73856     |
+|max-pooling2d-7 (MaxPooling2 | (19, 19, 128)       | 0         |
+|conv2d-8 (Conv2D)            | (19, 19, 128)       | 147584    |
+|max-pooling2d-8 (MaxPooling2 | (10, 10, 128)       | 0         |
+|flatten-1 (Flatten)          | (12800)             | 0         |
+|dropout-4 (Dropout)          | (12800)             | 0         |
+|dense-2 (Dense)              | (512)               | 6554112   |
+|dense-3 (Dense)              | (1)                 | 513       |
+
+
 Total params: 6,794,881
-Trainable params: 6,794,881
-Non-trainable params: 0
+
+Trainable params: 6,794,881 
+
+Non-trainable params: 0 
+
 _________________________________________________________________
+
 
 
 
@@ -84,16 +79,14 @@ _________________________________________________________________
 - The **output** represents a binary classification of the input images as 1 (Pneumonia) or 0 (Normal).
 
 
-##Results
+## Results
 
 On the test set, we achieved:
 
-- 0.92 accuracy
-- 0.92 f1-score
-- 0.93 recall
-- 0.91 precision
-
-
+- Accuracy  = 0.92
+- F1-score  = 0.92
+- Recall    = 0.93
+- Precision = 0.91 
 
 
 
