@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Stay Healthy</string>
+    <string name="pneumonia_description">
+        Pneumonia is an infection in one or both lungs. Bacteria, viruses, and fungi cause it.
+        The infection causes inflammation in the air sacs in your lungs, which are called alveoli.
+        The alveoli fill with fluid or pus, making it difficult to breathe.
+        The germs that cause pneumonia are contagious. This means they can spread from person to person.
+        Both viral and bacterial pneumonia can spread to others through inhalation of airborne droplets from a sneeze or cough.
+        You can also get these types of pneumonia by coming into contact with surfaces or objects that are contaminated with
+        pneumonia-causing bacteria or viruses.You can contract fungal pneumonia from the environment.
+        However, it doesn’t spread from person to person. \nSymptoms of pneumonia:
+        \n1. coughing that may produce phlegm (mucus)
+        \n2. fever
+        \n3. sweating or chills
+        \n4. shortness of breath that happens while doing normal activities or even while resting
+        \n5. chest pain that’s worse when you breathe or cough
+        \n6. feelings of tiredness or fatigue
+        \n7. loss of appetite
+        \n8. nausea or vomiting
+        \n9. headaches
+    </string>
+    <string name="instruction_description">
+        The app uses the chest X-ray of people to classify whether they are infected or not.\n
+        \n1. Tap on the bottom right camera button.
+        \n2. Then, just select the X-ray of the person from your device.
+        \n3. The app will do the rest of the job.
+    </string>
+</resources>
