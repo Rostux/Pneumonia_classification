@@ -95,11 +95,11 @@ The model was converted into a TFLite model using the TFLiteConverter for deploy
 
 ## Stay Healthy App
 
-The app uses the generated tflite model for image classification. 
-User Uploads the chest X-ray of the person.
-The image is first converted into a bitmap and then each pixel is extracted and stored into a ByteBuffer.
-An Interpreter object is instantiated which holds the tflite model.
-This interpreter object is then invoked by passing 2 ByteBuffer objects (the input and the output), the output is modified during this call.
+- The app uses the generated tflite model for image classification. 
+- User Uploads the chest X-ray of the person.
+- The image is first converted into a bitmap and then each pixel is extracted and stored into a ByteBuffer.
+- An Interpreter object is instantiated which holds the tflite model.
+- This interpreter object is then invoked by passing 2 ByteBuffer objects (the input and the output), the output is modified during this call.
 
 ## App Permissions
 - READ EXTERNAL STORAGE
